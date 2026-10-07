@@ -1,0 +1,974 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PLL</title>
+    <style>
+        .group {
+            display: flex;
+            width: 100%;
+        }
+        .item {
+            flex: 0 0 50%;
+        }
+    </style>
+</head>
+<body>
+    <svg width="0" height="0">
+        <defs>
+            <marker id="arrowhead" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+                <polygon points="0 0, 7 3.5, 0 7" fill="#000000" />
+            </marker>
+        </defs>
+    </svg>
+    <a href="../../index.html">首页</a>
+    <a href="../index.html">上一页</a>
+    <div>本网站所有步数采用 HTM</div>
+    <div>报告问题或其他公式请在 Github Issues 和作者 hmchmc1234567 联系</div>
+    <h1>三棱换</h1>
+    <div class="group">
+        <div class="item">
+            <h2>Ua-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M100 75 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L75 100" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L100 75" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R U' R U R U R U' R' U' R2</td>
+                    <td>11</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Ub-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 75 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L75 100" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R2 U R U R' U' R' U' R' U R'</td>
+                    <td>11</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h1>四棱换</h1>
+    <div class="group">
+        <div class="item">
+            <h2>H-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 75 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L75 100" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L75 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>M2 U M2 U2 M2 U M2</td>
+                    <td>11</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Z-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 75 L75 100" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L75 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>M' U M2 U M2 U M' U2 M2 U'</td>
+                    <td>15</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h1>三角换</h1>
+    <div class="group">
+        <div class="item">
+            <h2>Aa-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <path d="M100 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L100 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>x' R2 D2 R' U' R D2 R' U R' x</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Ab-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <path d="M100 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L50 100" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>x' R U' R D2 R' U R D2 R2 x</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h1>四角换</h1>
+    <div class="group">
+        <div class="item">
+            <h2>E-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <path d="M100 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L50 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>x' R U' R' D R U R' D' R U R' D R U' R' D' x</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>X-Perm(=H-Perm + U2)</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <path d="M50 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L50 100" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <h1>两角两棱换</h1>
+    <div class="group">
+        <div class="item">
+            <h2>T-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <path d="M50 75 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L100 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R U R' U' R' F R2 U' R' U' R U R' F'</td>
+                    <td>14</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>F-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <path d="M100 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L75 100" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L75 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R' U' F' R U R' U' R' F R2 U' R' U' R U R' F'</td>
+                    <td>18</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="group">
+        <div class="item">
+            <h2>V-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <path d="M50 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L75 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R' U R' U' R D' R' D R' U D' R2 U' R2 D R2</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Y-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <path d="M50 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L75 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>F R U' R' U' R U R' F' R U R' U' R' F R F'</td>
+                    <td>17</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="group">
+        <div class="item">
+            <h2>Ja-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L75 100" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L50 75" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>y x U' D' F2 U F U' F2 D F' U F x</td>
+                    <td>11</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Jb-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <path d="M100 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L75 100" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R U R' F' R U R' U' R' F R2 U' R' U'</td>
+                    <td>14</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="group">
+        <div class="item">
+            <h2>Na-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 75 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L100 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>(r' D r U2)5</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Nb-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <path d="M50 75 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M50 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L50 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>(r D r' U2)5</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="group">
+        <div class="item">
+            <h2>Ra-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#FF7F00" />
+                    <path d="M100 50 L100 100" marker-end="url(#arrowhead)" />
+                    <path d="M100 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L50 75" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L75 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R U' R' U' R U R D R' U' R D' R' U2 R' U'</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Rb-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L75 50" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>y R' U2 R U2 R' F R U R' U' R' F' R2 U'</td>
+                    <td>14</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h1>三角三棱换</h1>
+    <div class="group">
+        <div class="item">
+            <h2>Ga-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 50 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L75 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L50 75" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>R2 U R' U R' U' R U' R2 D U' R' U R D' U</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Gb-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L75 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L100 75" marker-end="url(#arrowhead)" />
+                    <path d="M100 75 L50 75" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>y' D R' U' R U D' R2 U R' U R U' R U' R2 U'</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="group">
+        <div class="item">
+            <h2>Gc-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 50 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L75 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L75 100" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L50 75" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>y' R2 U' R U' R U R' U R2 D' U R U' R' D U'</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2>Gd-Perm</h2>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <g stroke="#000000" stroke-width="1.5">
+                    <rect x="37.5" y="12.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="62.5" y="12.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="87.5" y="12.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="12.5" y="37.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="37.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="37.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="12.5" y="62.5" width="25" height="25" fill="#00FF00" />
+                    <rect x="37.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="62.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="62.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="12.5" y="87.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="37.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="62.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="87.5" y="87.5" width="25" height="25" fill="#FFFF00" />
+                    <rect x="112.5" y="87.5" width="25" height="25" fill="#FF7F00" />
+                    <rect x="37.5" y="112.5" width="25" height="25" fill="#FF0000" />
+                    <rect x="62.5" y="112.5" width="25" height="25" fill="#0000FF" />
+                    <rect x="87.5" y="112.5" width="25" height="25" fill="#00FF00" />
+                    <path d="M50 50 L50 100" marker-end="url(#arrowhead)" />
+                    <path d="M50 100 L100 50" marker-end="url(#arrowhead)" />
+                    <path d="M100 50 L50 50" marker-end="url(#arrowhead)" />
+                    <path d="M50 75 L75 100" marker-end="url(#arrowhead)" />
+                    <path d="M75 100 L75 50" marker-end="url(#arrowhead)" />
+                    <path d="M75 50 L50 75" marker-end="url(#arrowhead)" />
+                </g>
+            </svg>
+            <table border="1">
+                <tr>
+                    <th>公式</th>
+                    <th>步数</th>
+                </tr>
+                <tr>
+                    <td>D' R U R' U' D R2 U' R U' R' U R' U R2 U</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
